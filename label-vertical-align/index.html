@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>移动端文本小于12px的垂直居中问题</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .label1 {
+            display: inline-block;
+            border: 1px solid #fd5e5e;
+            font-size: 10px;
+            line-height: 14px;
+            color: #fd5e5e;
+            vertical-align: top;
+        }
+        .label2 {
+            display: inline-block;
+            font-size: 20px;
+            line-height: 28px;
+            color: #fd5e5e;
+            border: 2px solid #fd5e5e;
+            transform: scale(0.5);
+            transform-origin: 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="label1">标签1</div>
+        <div class="label2">标签2</div>
+    </div>
+</body>
+</html>
