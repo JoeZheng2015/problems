@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shorter_than_conten</title>
+    <style>
+        .Flex__container {
+            display: flex;
+            width: 200px;
+            background-color: green;
+            margin-bottom: 100px;
+        }
+        .Flex__head {
+            flex: none;
+        }
+        .Flex__tail {
+            flex: 1;
+            display: flex;
+        }
+        .Flex__tail--withMinWidth {
+            min-width: 0px;
+        }
+        .Flex__ell {
+            flex: 1;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="Flex__container">
+        <div class="Flex__head">卡里·纪伯伦</div>
+        <div class="Flex__tail">
+            <div class="Flex__head">(1883-1931)</div>
+            <div class="Flex__ell">我曾经七次鄙视自己的灵魂</div>
+        </div>
+    </div>
+
+    <div class="Flex__container">
+        <div class="Flex__head">卡里·纪伯伦</div>
+        <div class="Flex__tail Flex__tail--withMinWidth">
+            <div class="Flex__head">(1883-1931)</div>
+            <div class="Flex__ell">我曾经七次鄙视自己的灵魂</div>
+        </div>
+    </div>
+</body>
+</html

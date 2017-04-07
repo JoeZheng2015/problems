@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>去除行内元素间的空格</title>
+    <style>
+        p {
+            font-size: 32px;
+        }
+        .flex {
+            display: flex;
+        }
+        .wordSpacing {
+            word-spacing: -10px;
+        }
+        .table {
+            display:table;
+        }
+        .table span {
+            display: table-cell;
+        }
+        .margin span {
+            display: inline-block;
+            margin-right: -10px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <span>我是头部</span>
+        我是尾部
+    </p>
+    <p class="flex">
+        <span>我是头部</span>
+        我是尾部
+    </p>
+    <p class="wordSpacing">
+        <span>我是头部</span>
+        我是尾部
+    </p>
+    <p class="table">
+        <span>我是头部</span>
+        我是尾部
+    </p>
+    <p class="margin">
+        <span>我是头部</span>
+        我是尾部
+    </p>
+</body>
+</html>
